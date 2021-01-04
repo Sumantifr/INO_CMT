@@ -1,0 +1,49 @@
+
+Processing Cosmic_trig.cpp...
+========ITer =========== 1
+Entry 1
+==== x-z ==== 
+Initial chi2/NDF:inf/4
+Final chi2/NDF:0/-2
+Number of points 0
+And points are: 
+xz_pass 0
+========ITer =========== 2
+Entry 2
+==== x-z ==== 
+Initial chi2/NDF:15.4286/5
+Final chi2/NDF:6.12245/4
+Number of points 6
+And points are: 
+point:1 x:-10.5 z:0
+point:2 x:-10.5 z:4
+point:3 x:-10.5 z:8
+point:4 x:-7.5 z:12
+point:5 x:-7.5 z:16
+point:6 x:-7.5 z:20
+xz_pass 1
+========ITer =========== 3
+Entry 3
+==== x-z ==== 
+Initial chi2/NDF:8.43398/2
+Final chi2/NDF:2.38095/1
+Number of points 3
+And points are: 
+point:1 x:-10.5 z:12
+point:2 x:-7.5 z:16
+point:3 x:-1.5 z:20
+xz_pass 0
+========ITer =========== 4
+Entry 4
+==== x-z ==== 
+Initial chi2/NDF:16.0269/5
+Final chi2/NDF:4.76191/4
+Number of points 6
+And points are: 
+point:1 x:-7.5 z:0
+point:2 x:-7.5 z:4
+point:3 x:-7.5 z:8
+point:4 x:-7.5 z:12
+point:5 x:-4.5 z:20
+point:6 x:-4.5 z:28
+xz_pass 1

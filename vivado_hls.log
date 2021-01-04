@@ -1,0 +1,316 @@
+INFO: [HLS 200-10] Running '/home/suman/Vivado/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'suman' on host 'rajdeep-nest' (Linux_x86_64 version 4.4.0-165-generic) on Mon Jul 13 20:18:58 IST 2020
+INFO: [HLS 200-10] On os Ubuntu 16.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/suman/INO'
+Sourcing Tcl script '/home/suman/INO/Cosmic_trig/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/home/suman/INO/Cosmic_trig'.
+INFO: [HLS 200-10] Adding design file 'Cosmic_trig.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'Cosmic_trig.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'Cosmic_trig_tb.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/suman/INO/Cosmic_trig/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library '/home/suman/Vivado/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Cosmic_trig.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 842.320 ; gain = 128.000 ; free physical = 1134 ; free virtual = 7038
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 842.320 ; gain = 128.000 ; free physical = 1134 ; free virtual = 7038
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'cordic_::cordic_circ_v1<88, 1, 0, 0, 88, 3, 86, 1>' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:620).
+INFO: [XFORM 203-603] Inlining function 'std::max<float>' into 'Cosmic_trig_top' (Cosmic_trig.cpp:418).
+INFO: [XFORM 203-603] Inlining function 'std::max<float>' into 'Cosmic_trig_top' (Cosmic_trig.cpp:272).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1044.199 ; gain = 329.879 ; free physical = 906 ; free virtual = 6841
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed12' into '_ZN9fp_structIdEC1Ed6' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_nan<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_nan.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed6' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:578) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZNK9fp_structIdE4expvEv10' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:606) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZNK9fp_structIdE8mantissaEv8' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:607) automatically.
+INFO: [XFORM 203-602] Inlining function 'cordic_::addsub<0, 0, ap_fixed<88, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<88, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:189->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:620) automatically.
+INFO: [XFORM 203-602] Inlining function 'cordic_::addsub<0, 0, ap_fixed<88, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<88, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, bool>' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:191->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:620) automatically.
+INFO: [XFORM 203-602] Inlining function 'cordic_::addsub<0, 0, ap_fixed<86, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<86, 1, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_uint<1> >' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:193->/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:620) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed6' into 'cordic_::atan_cordic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:630) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'cordic_::atan_cordic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:633) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_nan<double>' into 'cordic_::atan_cordic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:642) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed6' into 'generic_copysign<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'fabs' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'atan' into 'Cosmic_trig_top' (Cosmic_trig.cpp:118) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'Cosmic_trig_top' (Cosmic_trig.cpp:125) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'Cosmic_trig_top' (Cosmic_trig.cpp:126) automatically.
+WARNING: [SYNCHK 200-23] /wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:622: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1044.199 ; gain = 329.879 ; free physical = 874 ; free virtual = 6812
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:577).
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 2 for loop 'Loop-4' (Cosmic_trig.cpp:264:1) in function 'Cosmic_trig_top'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 2 for loop 'Loop-5' (Cosmic_trig.cpp:279:1) in function 'Cosmic_trig_top'.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:167) in function 'cordic_::atan_generic<double>' completely with a factor of 88.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:622) in function 'cordic_::atan_generic<double>' completely with a factor of 1.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1' (Cosmic_trig.cpp:102) in function 'Cosmic_trig_top' partially with a factor of 4.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed12' into '_ZN9fp_structIdEC1Ed6' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_nan<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_nan.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed6' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:578) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZNK9fp_structIdE4expvEv10' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:606) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZNK9fp_structIdE8mantissaEv8' into 'cordic_::atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:607) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed6' into 'cordic_::atan_cordic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:630) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'cordic_::atan_cordic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:633) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_nan<double>' into 'cordic_::atan_cordic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:642) automatically.
+INFO: [XFORM 203-602] Inlining function 'cordic_::atan_cordic<double>' into 'atan' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/atandouble.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed6' into 'generic_copysign<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fabs.h:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'fabs' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'Cosmic_trig_top' (Cosmic_trig.cpp:125) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'Cosmic_trig_top' (Cosmic_trig.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'fabs' into 'Cosmic_trig_top' (Cosmic_trig.cpp:196) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:622:9) to (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:622:9) in function 'cordic_::atan_generic<double>'... converting 10 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Cosmic_trig.cpp:296:35) to (Cosmic_trig.cpp:296:29) in function 'Cosmic_trig_top'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1180.160 ; gain = 465.840 ; free physical = 754 ; free virtual = 6703
+INFO: [XFORM 203-603] Evaluating the output(s) of a call to function 'cordic_::addsub<0, 0, ap_fixed<86, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<86, 1, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_uint<1> >' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:193:9) in function 'cordic_::atan_generic<double>' and propagating its result(s) since all actual argument(s) to the function are constants.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1.1' (Cosmic_trig.cpp:108:22) in function 'Cosmic_trig_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1.2' (Cosmic_trig.cpp:108:22) in function 'Cosmic_trig_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1.3' (Cosmic_trig.cpp:108:22) in function 'Cosmic_trig_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1.4' (Cosmic_trig.cpp:108:22) in function 'Cosmic_trig_top'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2.1' (Cosmic_trig.cpp:102:16) in function 'Cosmic_trig_top' : 
+
+more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (Cosmic_trig.cpp:100:14) in function 'Cosmic_trig_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-3' (Cosmic_trig.cpp:155:14) in function 'Cosmic_trig_top'.
+WARNING: [XFORM 203-631] Renaming function 'cordic_::atan_generic<double>' to 'atan_generic<double>' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:577)
+WARNING: [XFORM 203-631] Renaming function 'cordic_::addsub<0, 0, ap_fixed<88, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<88, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, bool>' to 'addsub' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:127:5)
+WARNING: [XFORM 203-631] Renaming function 'cordic_::addsub<0, 0, ap_fixed<88, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<88, 3, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_uint<1> >' to 'addsub.1' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:127:5)
+WARNING: [XFORM 203-631] Renaming function 'cordic_::addsub<0, 0, ap_fixed<86, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<86, 1, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_uint<1> >' to 'addsub.2' (/wrk/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_cordic.h:127:5)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1180.160 ; gain = 465.840 ; free physical = 686 ; free virtual = 6637
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Cosmic_trig_top' ...
+WARNING: [SYN 201-103] Legalizing function name 'addsub.1' to 'addsub_1'.
+WARNING: [SYN 201-103] Legalizing function name 'addsub.2' to 'addsub_2'.
+WARNING: [SYN 201-103] Legalizing function name 'atan_generic<double>' to 'atan_generic_double_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'addsub_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'addsub.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 36.01 seconds; current allocated memory: 452.613 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 452.680 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'addsub' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'addsub'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 452.768 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 452.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'addsub_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'addsub.2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 452.917 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 452.979 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'atan_generic<double>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 48.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.66 seconds; current allocated memory: 456.463 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.75 seconds; current allocated memory: 461.531 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'atan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'atan'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 77.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3 seconds; current allocated memory: 462.818 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.9 seconds; current allocated memory: 463.442 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Cosmic_trig_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+WARNING: [SCHED 204-68] The II Violation in module 'Cosmic_trig_top' (Loop: Loop 2.1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('boxes_addr_3_write_ln127', Cosmic_trig.cpp:127) of variable 'add_ln127', Cosmic_trig.cpp:127 on array 'boxes', Cosmic_trig.cpp:91 and 'load' operation ('boxes_load_2', Cosmic_trig.cpp:127) on array 'boxes', Cosmic_trig.cpp:91.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 148.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.2'.
+WARNING: [SCHED 204-68] The II Violation in module 'Cosmic_trig_top' (Loop: Loop 2.2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('boxes_addr_4_write_ln127', Cosmic_trig.cpp:127) of variable 'add_ln127_1', Cosmic_trig.cpp:127 on array 'boxes', Cosmic_trig.cpp:91 and 'load' operation ('boxes_load_3', Cosmic_trig.cpp:127) on array 'boxes', Cosmic_trig.cpp:91.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 148.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.3'.
+WARNING: [SCHED 204-68] The II Violation in module 'Cosmic_trig_top' (Loop: Loop 2.3): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('boxes_addr_5_write_ln127', Cosmic_trig.cpp:127) of variable 'add_ln127_2', Cosmic_trig.cpp:127 on array 'boxes', Cosmic_trig.cpp:91 and 'load' operation ('boxes_load_4', Cosmic_trig.cpp:127) on array 'boxes', Cosmic_trig.cpp:91.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 148.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.4'.
+WARNING: [SCHED 204-68] The II Violation in module 'Cosmic_trig_top' (Loop: Loop 2.4): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('boxes_addr_6_write_ln127', Cosmic_trig.cpp:127) of variable 'add_ln127_3', Cosmic_trig.cpp:127 on array 'boxes', Cosmic_trig.cpp:91 and 'load' operation ('boxes_load_5', Cosmic_trig.cpp:127) on array 'boxes', Cosmic_trig.cpp:91.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 148.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
+WARNING: [SCHED 204-21] Estimated clock period (8.801ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'Cosmic_trig_top' consists of the following:
+	'fcmp' operation ('tmp_20', Cosmic_trig.cpp:158) [883]  (3.79 ns)
+	'and' operation ('and_ln158_1', Cosmic_trig.cpp:158) [884]  (0.616 ns)
+	'select' operation ('max_xcon', Cosmic_trig.cpp:158) [885]  (0.613 ns)
+	'phi' operation ('max_xcon') with incoming values : ('max_xcon', Cosmic_trig.cpp:158) [844]  (0 ns)
+	'fcmp' operation ('tmp_20', Cosmic_trig.cpp:158) [883]  (3.79 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4.9 seconds; current allocated memory: 469.783 MB.
+INFO: [HLS 200-434] Only 5 loops out of a total 18 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.42 seconds; current allocated memory: 481.274 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'addsub_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'addsub_1'.
+INFO: [HLS 200-111]  Elapsed time: 6.03 seconds; current allocated memory: 482.708 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'addsub' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'addsub'.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 483.144 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'addsub_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'addsub_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 483.468 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan_generic_double_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.35 seconds; current allocated memory: 492.383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'atan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'atan' is 6658 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_dcmp_64ns_64ns_1_2_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_ddiv_64ns_64ns_64_22_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_dsub_64ns_64ns_64_5_full_dsp_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'atan'.
+INFO: [HLS 200-111]  Elapsed time: 4.98 seconds; current allocated memory: 514.203 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Cosmic_trig_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Cosmic_trig_top/xhitx_strips' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Cosmic_trig_top/yhitx_strips' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Cosmic_trig_top/zval' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Cosmic_trig_top/xzpass' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Cosmic_trig_top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Cosmic_trig_top/yhitx_strips_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Cosmic_trig_top/yhitx_strips_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Cosmic_trig_top/yhitx_strips_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Cosmic_trig_top/yhitx_strips_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Cosmic_trig_top/yhitx_strips_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Cosmic_trig_top/yhitx_strips_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Cosmic_trig_top/yhitx_strips_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Cosmic_trig_top/yhitx_strips_d1' to 0.
+WARNING: [RTGEN 206-101] Port 'Cosmic_trig_top/yhitx_strips_q1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_dadd_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_dcmp_64ns_64ns_1_2_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_ddiv_64ns_64ns_64_22_0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_dsqrt_64ns_64ns_64_21_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_fadd_32ns_32ns_32_4_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_fcmp_32ns_32ns_1_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_fdiv_32ns_32ns_32_10_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_fpext_32ns_64_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_fptrunc_64ns_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_mul_mul_8ns_15s_15_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_sitodp_32ns_64_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Cosmic_trig_top_sitofp_32ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Cosmic_trig_top'.
+INFO: [HLS 200-111]  Elapsed time: 4.51 seconds; current allocated memory: 532.691 MB.
+INFO: [RTMG 210-279] Implementing memory 'Cosmic_trig_top_xval_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'Cosmic_trig_top_boxes_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Cosmic_trig_top_prefinal_x_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Cosmic_trig_top_final_xpoints_x_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'Cosmic_trig_top_which_points_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1318.340 ; gain = 604.020 ; free physical = 515 ; free virtual = 6517
+INFO: [VHDL 208-304] Generating VHDL RTL for Cosmic_trig_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for Cosmic_trig_top.
+INFO: [HLS 200-112] Total elapsed time: 86.16 seconds; peak allocated memory: 532.691 MB.
