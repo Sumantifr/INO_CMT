@@ -1,10 +1,16 @@
 # INO_CMT
 
-==== Main codes for cosmic muon trigger ===========
-Header file:	Cosmic_trig.h
+Main codes for cosmic muon trigger
+==================================
+
+Header file:	
 -----------
-Cpp code:	Cosmic_trig.cpp
+Cosmic_trig.h
+
+Cpp code:	
 --------
+Cosmic_trig.cpp
+
 Test Bench Codes:
 ----------------
 Cosmic_trig_tb.cpp: This code just uses an initialized one-dimensional input data (can be used just to check if the code is running properly)
